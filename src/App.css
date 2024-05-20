@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #F6F6F6;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000A18;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #000A18;
+  color: #F6F6F6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #03224d;
+}
+
+input {
+  width: 210px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.start {
+  background: linear-gradient(to bottom, #12B2FD, #1278F3);
+  padding: 15px;
+  border-radius: 0 0px 60px 60px;
+  box-shadow: 0 0 10px #12B2FD, 0px 0 70px #12B2FD, 10px 5px 30px #12B2FD, 0 0 5px #12B2FD;
+}
+
+
+.head h3 {
+  font-size: 1.5em;
+  color: #F6F6F6;
+}
+
+.head h3 span {
+  color: #5fff15;
+}
+
+.name {
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+.name span {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.image span {
+  font-size: 10rem;
+  color: #000A18;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp :nth-child(1){
+  font-size: 4em;
+}
+
+.temp :nth-child(1) span{
+  font-family: 'Times New Roman';
+  font-size: 1em;
+  opacity: 0.6;
+  font-weight: 900;
+}
+
+.temp :nth-child(3){
+  font-size: 1.5em;
+}
+
+.temp :nth-child(5){
+  opacity: 0.6;
+}
+
+.extra {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-top: 1px solid #F6F6F6;
+}
+
+.extra div {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra div :nth-child(1) {
+  font-size: 2rem;
+  color: #5fff15;
+}
+
+.extra div :nth-child(5) {
+  opacity: 0.6;  
+}
+
+.title {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.data div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.data div :nth-child(1) {
+  font-size: 1.2em;
+}
+
+.data div :nth-child(3) {
+  opacity: 0.6;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
