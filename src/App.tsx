@@ -11,11 +11,10 @@ interface Location {
 
 function App() {
 
-  const API_KEY: string = '7a89d82a91fc30cbc7578a20594a5ac1'
+  const API_KEY: string = ''
   const [city, setCity] = useState('Madrid')
   const [location, setLocation] = useState<Location>({ lon: -87.2068, lat: 14.0818 })
   const [weather, setWeather] = useState<any>({})
-  const [icon, setIcon] = useState<string>('')
 
   const date = new Date()
 
@@ -60,7 +59,7 @@ function App() {
     getWeatherCurrent()
   }, [location])
 
-  const getIcon = (icon: string) => {
+  const getIcon = () => {
     if (weather.weather[0].icon === '01d') return 'sunny';
     if (weather.weather[0].icon === '01n') return 'clear_night';
     if (weather.weather[0].icon === '02d') return 'nest_farsight_weather';
@@ -115,7 +114,7 @@ function App() {
                 <p className='name'><span className="material-symbols-outlined">location_on</span>{weather.name}</p>
 
                 <div className="image">
-                  <span className="material-symbols-outlined">{getIcon(weather.weather[0].icon)}</span>
+                  <span className="material-symbols-outlined">{getIcon()}</span>
                 </div>
                 <div className="temp">
                   <span>{parseInt(weather.main.temp)}<span>°</span></span>
